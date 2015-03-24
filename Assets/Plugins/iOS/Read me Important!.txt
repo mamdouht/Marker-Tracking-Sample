@@ -1,0 +1,2 @@
+Make sure to Uncompress the "metaiosdk" file
+File was compressed due to size limitation from Github >100mb

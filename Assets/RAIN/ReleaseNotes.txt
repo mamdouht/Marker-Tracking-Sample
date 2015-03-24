@@ -1,0 +1,28 @@
+RAIN version 2.1.7.2 Release Notes
+--------------------------------
+
+#usingRAIN (top 6):
+1) Multiple nav meshes in one scene
+2) New RAIN starter kit (http://rivaltheory.com/community/tutorials/)
+3) Custom behavior tree nodes
+4) Automatic nav mesh selection
+5) Mecanim support
+6) Patrol routes
+
+Changes and bug fixes:
+----------------------
+Changed MoveAction to reset path after reaching target
+Changed BasicNavigator to repath on partial paths when reaching new NavMesh
+Changed BasicNavigator to use start and target positions instead of graph nodes for more accurate paths
+Fixed issue with NavMesh generation where some areas were improperly marking themselves walkable/unwalkable
+Fixed issue with BasicNavigator setting partial path flag
+Fixed color and visibility problem that would cause all selected rigs to get the same colors and visibility when selected
+Fixed Waypoint Node to accept navigationtarget("XX") as a valid path target
+Fixed framing problem with waypoints, navigation meshes, aspects, etc in the latest Unity
+Fixed selection problem with waypoints where off screen waypoints could block the selection of on screen ones
+Fixed selection problem with waypoints and navigation targets where significant height changes from zero would cause difficulty selecting them
+Added a Clear Navigation Graph button and function for people doing runtime generation
+Added always on option for visualizations
+Updated NavMesh visualizations to be GL fixed function (cleans up the code interface)
+Updated visualization for paths
+Updated the code interface for Navigation Graphs, Nodes, and Edges
